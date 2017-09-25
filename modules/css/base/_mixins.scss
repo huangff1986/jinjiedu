@@ -1,0 +1,63 @@
+// 清除浮动
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// 隐藏字体
+@mixin hide-text() {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+@mixin text-hide() {
+  @include hide-text;
+}
+
+// 响应式图片
+@mixin img-responsive($display: block) {
+  display: $display;
+  max-width: 100%; // Part 1: Set a maximum relative to the parent
+  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+}
+
+
+// 半透明
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100);
+  filter: alpha(opacity=$opacity-ie);
+}
+
+// 超出字体隐藏
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap:normal;
+}
+
+// 块居中
+@mixin center() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// 消除inline-block子元素产生的白底
+@mixin vertical-align() {
+  font-size: 0.001px;
+}
+
+
+

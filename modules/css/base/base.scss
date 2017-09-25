@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+/* 用于引入所有基础样式 */
+@import "mixins";
+@import "variables";
+@import "normalize.css/normalize.css";
+
+
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, textarea,
+p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+// 干掉ul ol 默认list-style
+ol,ul {
+	list-style: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+address, caption, cite, dfn, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+caption, th {
+  text-align: left;
+}
+
+// 取消h1的默认样式
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+input,select,textarea {
+	font-size: 100%
+}
+
+q:before, q:after {
+  content: '';
+}
+
+abbr, acronym {
+  border: 0;
+}
+
+/* JJ Base 
+   ========================================================= 
+ */
+
+/**
+ *  全局 font-size:
+ *  全局 font-size 交由淘宝 flexible.js 管理。所以这里取消掉 全局font-size的设置;
+ * 
+ */
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+	// font-size: 10px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); // 取消ios 点击链接的额外效果
+}
+
+html * {
+	outline: 0;
+	-webkit-text-size-adjust: none;
+}
+
+
+/**
+ * 1.背景 2.字体 3.行高
+ */
+
+body {
+	position: relative;
+	background: $body-bg;
+	font-family: $font-family-base;
+	// line-height: ; 块元素保持自己的行高
+	color: $text-color;
+}
+
+/**
+ * 重置a标签
+ */
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}

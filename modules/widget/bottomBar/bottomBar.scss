@@ -1,0 +1,35 @@
+.w-bottomBar{
+	position: fixed;
+	bottom:0;
+	width:750px;
+	height:96px;
+	margin:0 auto;
+	z-index:1000;
+	.btnList{
+		display: flex;
+		width:100%;
+		height:100%;
+		font-size: 40px;
+		.btnList__item {
+			flex:1;
+			height:100%;
+			text-align: center;
+			line-height: 96px;
+			a {
+				width: 100%;
+				height: 100%;
+				text-decoration: none;
+				color:#fff;
+			}
+		}
+		.btnList__item--red{
+			background-color: #ed4b49;
+		}
+		.btnList__item--green{
+			background-color: #58b415;
+		}
+		.btnList__item--yellow{
+			background-color: #f89a1e;
+		}
+	}
+}

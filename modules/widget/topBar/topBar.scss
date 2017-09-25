@@ -1,0 +1,32 @@
+$topbar-height: 94px !default;;
+.w-topBar {
+	width: 750px;
+	height: $topbar-height;
+	background-color: #58b415;
+		text-align: center;
+	.topBar__btn{
+		display: block;
+		width: 86px;
+		height: $topbar-height;
+		background-repeat: no-repeat;
+		background-position: center center;
+		&.topBar__btn--return{
+			float: left;
+			background-image: url(./img/return.png);
+			background-size: 26px 46px;
+		}
+		&.topBar__btn--home {
+			float: right;
+			background-image: url(./img/home.png);
+			background-size: 40px 40px;
+		}
+	}
+	.topBar__title {
+		height:$topbar-height;
+		line-height: $topbar-height;
+		font-size: 42px;
+		font-weight: normal;
+		color: #fff;
+	}
+
+}

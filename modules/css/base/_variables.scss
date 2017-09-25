@@ -1,0 +1,18 @@
+/* 颜色 */
+$body-bg: #eee !default;
+$text-color: #404040 !default;
+$font-family-base: 30px !default;
+/* 字体 */
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-base:        $font-family-sans-serif !default;
+/* z-index */
+$zindex-navbar:            1000 !default;
+$zindex-dropdown:          1000 !default;
+$zindex-navbar-fixed:      1030 !default;
+$zindex-modal-background:  1040 !default;
+$zindex-modal:             1050 !default;
+$zindex-popover:           1060 !default;
+$zindex-tooltip:           1070 !default;
+
+
+*{}  /* 解决报错问题 */

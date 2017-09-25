@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="topBar.scss">
+<script>
+	// 返回上一页
+	var topbar_return = document.getElementsByClassName('topBar__btn--return')[0];
+	topbar_return.onclick = function(){
+		history.back();
+	}
+</script>
+<div class="w-topBar">
+	<a href="##" class="topBar__btn topBar__btn--return"></a>
+	<a href="##" class="topBar__btn topBar__btn--home"></a>
+	<h1 class="topBar__title">顶部标题</h1>
+</div>
