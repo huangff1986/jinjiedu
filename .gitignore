@@ -12,5 +12,4 @@ node_modules/
 
 # files
 components/*
-
-.idea/
+.idea/*
