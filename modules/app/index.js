@@ -1,9 +1,6 @@
-
-
 /*基础JS*/
 var $ = require('jquery');
 var fastclick = require('fastclick');
-require('lib-flexible'); // 引入即可
 
 /*第三方插件*/
 // Swiper
@@ -36,5 +33,6 @@ var hot = new Swiper('.g-hot__banner', {
 
 
 var school = new Swiper('.g-school__banner', {
+	autoplay: 3000,
 	loop: true,
 })
