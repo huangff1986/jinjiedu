@@ -6,33 +6,31 @@ var fastclick = require('fastclick');
 // Swiper
 var Swiper = require('swiper');
 require('swiper/swiper.css')
-// 信息滚动
-var NewScrollText = require('../lib/NewScrollText.js');
+
+// 滚动插件
+var iscroll = require('iscroll')
 // 引入自定义组件
 
 fastclick.attach(document.body); 
 /************基础JS end *************/
 
-// 代码部分
+
+
+/***************页面代码*****************/
+// banner
 var banner = new Swiper('.g-banner__swiper', {
 	loop: true,
 	pagination: '.swiper-pagination-banner'
 })
 
 
-var rollBox = new Swiper('.g-rollBox__content', {
-	direction : 'vertical',
-	autoplay: 3000,
-	loop: true
-})
+// 新闻
+var $bulletinBtn = $('.btns__item')[0]; // 新闻公告按钮
+var $treatiseBtn = $('.btns__item')[1]; // 总裁论述按钮
+var $list        = $('.list-warp')[0];  // 新闻列表
 
-var hot = new Swiper('.g-hot__banner', {
-	loop: true,
-	pagination: '.swiper-pagination-hot'
-})
+var list = new iscroll('.list-warp', {
+	mouseWheel: true,
+	scrollbars: true
+});
 
-
-var school = new Swiper('.g-school__banner', {
-	autoplay: 3000,
-	loop: true,
-})

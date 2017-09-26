@@ -5,6 +5,7 @@
     "github:fis-components/fastclick@v1.0.6",
     "github:fis-components/normalize.css@3.0.3",
     "github:fis-components/lib-flexible@0.3.2",
-    "github:fis-components/swiper@v3.3.1"
+    "github:fis-components/swiper@v3.3.1",
+    "github:fis-components/iscroll@5.1.3"
   ]
 }
