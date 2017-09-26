@@ -1,7 +1,7 @@
 // 设置项目属性
 fis.set('project.name', ''); // 项目名称
 fis.set('project.static', 'public'); // 静态资源部署路径
-fis.set('project.files', ['*.html', 'map.json', '/test/*']); // 指定需要编译的文件和改文件的引入支援
+fis.set('project.files', ['*.html', 'map.json', '/mock/**']); // 指定需要编译的文件和改文件的引入支援
 
 // 引入模块化开发插件， 设置规范为 commonJs 规范。
 
@@ -102,17 +102,6 @@ fis.match(/^\/modules\/(.*\.(?:png|jpg|gif))$/i, {
 fis.match(/^\/modules\/(.*\.js)$/i, {
     isMod: true,
     release: '${project.static}/$1'
-});
-
-// ----- 配置前端模版 使用template.js
-
-// ----- 配置模拟数据
-fis.match('/test/**', {
-	release: '$0'
-});
-
-fis.match('/test/server.conf', {
-	release: '/config/server.conf'
 });
 
 

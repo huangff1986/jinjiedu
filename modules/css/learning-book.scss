@@ -6,15 +6,15 @@
 }
 //标题
 .g-title{
-  width:590px;
+  width:600px;
   height:76px;
   margin:32px auto;
-  background-image:url("img/literature-title-left.png"), url("img/literature-title-right.png");
-  background-position:0 0,440px 0 ;
+  background-image:url("img/literature-title-left-s.png"), url("img/literature-title-right-s.png");
+  background-position:0 0,525px 0 ;
   background-repeat: no-repeat;
   background-size: contain;
   h1{
-    width:300px;
+    width:450px;
     height:76px;
     line-height:76px;
     margin: 0 auto;
@@ -27,8 +27,7 @@
 .g-list {
   @include clearfix;
   width: 726px;
-  min-height: 1180px;
-  margin: 0px 12px 114px;
+  margin: 0px 12px 0px;
   .item {
     @include clearfix;
     .g-list__item {
@@ -44,5 +43,4 @@
     font-size:30px;/*px*/
     color:#888888;
   }
-
 }
