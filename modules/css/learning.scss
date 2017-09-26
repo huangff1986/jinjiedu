@@ -27,10 +27,10 @@
 }
 .g-section__body{
   width:654px;
-  height:2170px;
+  height:1320px;
   margin:0px 48px ;
   padding-top:140px;
-  background-image: url("img/trusteeship-subtitle.png");
+  background-image: url("img/learning-subtitle.png");
   background-size: 400px 120px;
   background-repeat: no-repeat;
   background-position: top center;
@@ -49,13 +49,13 @@
   width:100%;
   height:136px;
   margin-bottom:94px;
- @include clearfix;
+  @include clearfix;
   .g-btn__realize{
     display:block;
     width:453px;
     height:69px;
     margin:32px auto;
-    background-image: url("img/realize-literature.png");
+    background-image: url("img/realize-literature__03.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
