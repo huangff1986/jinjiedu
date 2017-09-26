@@ -1,0 +1,145 @@
+@import "base/mixins";
+
+/* banner */
+.g-banner{
+    width: 750px;
+    height: 300px;
+    overflow: hidden;
+    .g-banner__swiper{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .swiper-slide{
+            a{
+                display:block;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+            }
+        }
+        .swiper-pagination {
+            bottom: 0px;
+            .swiper-pagination-bullet{
+                &.swiper-pagination-bullet-active {
+                    background-color: #58b415;
+                }
+            }
+        }
+    }
+}
+
+/********** 新闻版块 ***********/ 
+.g-news {
+    .g-news__hd {
+        width:750px;
+        height:76px;
+        margin: 32px 0;
+        h1{
+            position: relative;
+            width:210px;
+            height:76px;
+            margin: 0 auto;
+            line-height:76px;
+            font-size: 36px;/*px*/
+            font-weight: bold;
+            text-align: center;
+            color:#ffffff;
+            background-color:#58b415;
+            &:before {
+                position: absolute;
+                top:0;
+                left: -200px;
+                display: block;
+                content: '';
+                width:200px;
+                height:100%;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: right;
+                background-image: url("img/info_title_left.png");
+            }
+            &:after {
+                position: absolute;
+                top:0;
+                right: -200px;
+                display: block;
+                content: '';
+                width:200px;
+                height:100%;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: left;
+                background-image: url("img/info_title_right.png");
+            }
+        }
+    }
+    .g-news__bd {
+        width:750px;
+        padding: 0 24px;
+        .btns {
+            height:70px;
+            .btns__item {
+                display: block;
+                float: left;
+                width:50%;
+                height:100%;
+                line-height: 70px;
+                font-size: 32px;
+                text-align: center;
+                background-color: #fff;
+                border:2px solid #c6c6c6;
+                &.btns__item--active {
+                    border:none;
+                    color:#fff;
+                    background-color: #58b415;
+                }
+            }
+        }
+        .list{
+            .list__item {
+                @include clearfix;
+                padding-top: 32px;
+                .time {
+                    @include text-overflow;
+                    float: left;
+                    width:100px;
+                    height:70px;
+                    color: #fff;
+                    background-color: #58b415;
+                    .time__day {
+                        height:40px;
+                        line-height: 40px;
+                        font-size: 32px;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                    .time__year {
+                        height:30px;
+                        line-height:30px;
+                        font-size: 20px;
+                        text-align: center;
+                    }
+                }
+                .content {
+                    @include text-overflow;
+                    float: right;
+                    width: 568px;
+                    height: 70px;
+                    h1 {
+                        font-size: 32px;
+                        height:40px;
+                        line-height: 40px;
+                    }
+                    h3 {
+                        font-size: 24px;
+                        height:30px;
+                        line-height: 30px;
+                        color: #9b9b9b;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

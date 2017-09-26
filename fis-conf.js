@@ -1,5 +1,6 @@
 // 设置项目属性
 fis.set('project.name', ''); // 项目名称
+fis.set('project.web', 'http://www.m.me'); // 静态资源部署路径
 fis.set('project.static', 'public'); // 静态资源部署路径
 fis.set('project.files', ['*.html', 'map.json', '/mock/**']); // 指定需要编译的文件和改文件的引入支援
 
@@ -126,8 +127,8 @@ var map = {
 		path: ''
 	},
 	'prod': {
-        host: 'http://www.jinjiedu.com',
-        path: '/${project.name}'
+        host: '${project.web}',
+        path: '/public/home'
     },
     'prod-debug': {
         host: '',
@@ -155,7 +156,7 @@ Object.keys(map).forEach(function(v) {
             domain: domain
         })
         .match('**/(*_{x,y,z}.png)', {
-            release: '/pkg/$1'
+            release: 'pkg/$1'
         })
         .match('::package', {
             spriter: fis.plugin('csssprites', {
@@ -168,14 +169,14 @@ Object.keys(map).forEach(function(v) {
             })
         })
         .match('/components/**.css', {
-            packTo: '/pkg/components.css'
+            packTo: 'pkg/components.css'
         })
         .match('/components/**.js', {
-            packTo: '/pkg/components.js'
+            packTo: 'pkg/components.js'
         })
         // 将lib ui util 下的所有css打包在一起
         .match('/modules/**.{scss,less,css}', {
-            packTo: '/pkg/modules.css'
+            packTo: 'pkg/modules.css'
         })
         // 不进行打包
         .match('/modules/css/**.{scss,less,css}', {
@@ -183,15 +184,15 @@ Object.keys(map).forEach(function(v) {
         })
         // common单独打包
         .match('/modules/css/common.scss', {
-            packTo: '/pkg/common.css'
+            packTo: 'pkg/common.css'
         })
         // 将lib ui util 下的js打包在一起
         .match('/modules/**.{es,js}', {
-            packTo: '/pkg/modules.js'
+            packTo: 'pkg/modules.js'
         })
         // 会把所有页面js文件打包在一起
         .match('/modules/app/**.{es,js}', {
-            packTo: '/pkg/pages.js'
+            packTo: 'pkg/pages.js'
         })
 })
 
