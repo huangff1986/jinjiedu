@@ -26,6 +26,7 @@
   }
 }
 .g-section__body{
+  @include clearfix;
   width:654px;
   height:1320px;
   margin:0px 48px ;
