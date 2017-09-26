@@ -1,0 +1,15 @@
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# build
+output/*
+
+# node.js
+npm-debug.log
+node_modules/
+
+# files
+components/*
+.idea/*

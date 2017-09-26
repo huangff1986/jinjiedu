@@ -1,0 +1,63 @@
+@import "base/mixins";
+
+.g-page{
+  width:750px;
+  margin: 0 auto;
+  @include clearfix;
+}
+//标题
+.g-title{
+  width:560px;
+  height:59px;
+  margin:32px auto;
+  background-image:url("img/info_title_left.png"), url("img/info_title_right.png");
+  background-position:0 0,448px 0 ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  h1{
+    width:338px;
+    height:59px;
+    line-height:59px;
+    margin: 0 auto;
+    font-size: 36px;/*px*/
+    text-align: center;
+    color:#ffffff;
+    background-color:#58b415;
+  }
+}
+.g-section__body{
+  width:654px;
+  height:2030px;
+  margin:0px 48px ;
+  padding-top:140px;
+  background-image: url("img/trusteeship-subtitle.png");
+  background-size: 400px 120px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  p{
+    line-height:45px;
+    font-size: 30px;/*px*/
+    text-indent: 2em;
+  }
+  img{
+    width:647px;
+    height:349px;
+    margin-top:10px;
+  }
+}
+.g-section__footer{
+  width:100%;
+  height:136px;
+  margin-bottom:94px;
+  @include clearfix;
+  .g-btn__realize{
+    display:block;
+    width:453px;
+    height:69px;
+    margin:32px auto;
+    background-image: url("img/realize-literature.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
