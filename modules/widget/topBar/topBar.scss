@@ -12,12 +12,12 @@ $topbar-height: 94px !default;;
 		background-position: center center;
 		&.topBar__btn--return{
 			float: left;
-			background-image: url(./img/return.png);
+			background-image: url(img/return.png);
 			background-size: 26px 46px;
 		}
 		&.topBar__btn--home {
 			float: right;
-			background-image: url(./img/home.png);
+			background-image: url(img/home.png);
 			background-size: 40px 40px;
 		}
 	}

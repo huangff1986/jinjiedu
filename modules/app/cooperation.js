@@ -1,4 +1,4 @@
-/*基础JS*/
+
 var $ = require('jquery');
 var fastclick = require('fastclick');
 require('lib-flexible'); // 引入即可
