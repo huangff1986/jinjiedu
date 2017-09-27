@@ -1,0 +1,31 @@
+@import "base/mixins";
+
+.g-page{
+	width:750px;
+	margin: 0 auto;
+	padding-bottom:94px;
+}
+
+.g-article {
+	width:750px;
+	padding: 38px 48px;
+	.head {
+		.head__title {
+			line-height: 52px;
+			font-size: 40px;
+		}
+		.head__info {
+			margin:24px 0;
+			font-size: 24px;	
+			color: #888;
+			.head__date {
+			}
+			.head__count {
+
+			}
+		}
+	}
+	.content {
+		margin-top: 38px;
+	}
+}

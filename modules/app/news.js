@@ -26,6 +26,7 @@ var $bulletinBtn = $($btns[0]); // 新闻公告按钮
 var $treatiseBtn = $($btns[1]); // 总裁论述按钮
 var $list        = $('.list');  // 新闻列表
 var $tips        = $('.tips');  // 提示信息
+
 var config = {
     url : '', // 异步地址
     page: 0,
