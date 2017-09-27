@@ -6,9 +6,6 @@ var fastclick = require('fastclick');
 // Swiper
 var Swiper = require('swiper');
 require('swiper/swiper.css')
-// 信息滚动
-var NewScrollText = require('../lib/NewScrollText.js');
-// 引入自定义组件
 
 fastclick.attach(document.body); 
 /************基础JS end *************/
