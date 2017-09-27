@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="g-page">
-    <link rel="import" href="w"
+    <link rel="import" href="modules/widget/topBar/topBar.html?__inline">
     <!--产品介绍-->
     <div class="g-produce">
         <div class="g-title">
@@ -77,7 +77,9 @@
     </div>
 </div>
 <script src="lib/mod.js"></script>
+<link rel="import" href="modules/widget/bottomBar/bottomBar.html?__inline">
 <script>
+    require('lib-flexible')
     require.async('modules/app/cooperation.js');
 </script>
 </body>

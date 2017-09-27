@@ -26,9 +26,11 @@
   }
 }
 .g-section__body{
+  @include clearfix;
   width:654px;
-  height:1810px;
+  height:1720px;
   margin:0px 48px ;
+
   padding-top:140px;
   background-image: url("img/training-subtitle.png");
   background-size: 400px 120px;
