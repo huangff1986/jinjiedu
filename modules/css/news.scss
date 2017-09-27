@@ -1,5 +1,7 @@
 @import "base/mixins";
-
+.g-page {
+    padding-bottom:98px;
+}
 /* banner */
 .g-banner{
     width: 750px;
@@ -95,8 +97,11 @@
                 }
             }
         }
-        .list{
+        .list-warp{
             .list__item {
+                .item__warp {
+                    display:block;
+                }
                 @include clearfix;
                 padding-top: 32px;
                 .time {
@@ -137,6 +142,13 @@
                         color: #9b9b9b;
                     }
                 }
+            }
+            .tips {
+                height: 100px;
+                line-height: 100px;
+                text-align:center;
+                font-size:30px;/*px*/
+                color:#888888;
             }
         }
     }

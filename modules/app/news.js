@@ -21,29 +21,51 @@ var banner = new Swiper('.g-banner__swiper', {
 
 
 // 新闻
-var $bulletinBtn = $('.btns__item')[0]; // 新闻公告按钮
-var $treatiseBtn = $('.btns__item')[1]; // 总裁论述按钮
-var $list        = $('.list-warp')[0];  // 新闻列表
+var $btns        = $('.btns__item');
+var $bulletinBtn = $($btns[0]); // 新闻公告按钮
+var $treatiseBtn = $($btns[1]); // 总裁论述按钮
+var $list        = $('.list');  // 新闻列表
+var $tips        = $('.tips');  // 提示信息
+var config = {
+    url : '', // 异步地址
+    page: 0,
+}
 
-var list = new iscroll('.list-warp', {
-	mouseWheel: true,
-	scrollbars: true
-});
+// 
+config.url = $bulletinBtn.data('url');
+
+installData();
+
+// 点击事件
+function onBtnClick() {
+	var $this = $(this);
+	cleanNews();
+	$btns.removeClass('btns__item--active');
+	$this.addClass('btns__item--active');
+    config.url = $this.data("url"); // 配置异步地址
+	installData()
+}
+
+$btns.on('click', onBtnClick)
+
 
 // 新增新闻
 function addNews( data ) {
 	var tpl = 
 		'<li class="list__item">'+ 
-			'<div class="time">' +
-    			'<div class="time__day">' + data.day + '</div>' +
-    			'<div class="time__year">' + data.year + '</div>' +
-    		'</div>' +
-			'<div class="content">' +
-				'<h1>' + data.title + '</h1>' +
-				'<h3>' + data.abstract + '</h3>' +
-			'</div>' +
+			'<a href="'+ data.url +'" class="item__warp">' +
+				'<div class="time">' +
+	    			'<div class="time__day">' + data.day + '</div>' +
+	    			'<div class="time__year">' + data.year + '</div>' +
+	    		'</div>' +
+				'<div class="content">' +
+					'<h1>' + data.title + '</h1>' +
+					'<h3>' + data.abstract + '</h3>' +
+				'</div>' +
+			'</a>' +
 		'</li>';
-    $list.append(tpl);
+	var string2dom = $(tpl)[0];
+    $list.append(string2dom);
 }
 
 function cleanNews() {
@@ -54,7 +76,7 @@ function cleanNews() {
 function installData(){
     $.ajax({
         type:"GET",
-        url:"/test/book-img",
+        url : config.url,
         contentType: 'application/json',
         dataType: "json",
         async: true,
@@ -62,8 +84,8 @@ function installData(){
             $.each(data.news,function(i,e){
             	addNews(e);
             });
-                 
-            $(".g-list__bulletin").text("已经到底了");
+            
+            $tips.text("已经到底了");
         },
         error:function(XMLHttpRequest, textStatus, errorThrown) {
             alert(XMLHttpRequest.status);
@@ -98,7 +120,6 @@ $(window).scroll(function(){
     scrollTop = getScrollTop();
     scrollBottom = document.body.scrollHeight - scrollTop;
     if(scrollBottom >= dch && scrollBottom <= (dch+10)){
-        console.log(123);
         installData();
     }
 })
