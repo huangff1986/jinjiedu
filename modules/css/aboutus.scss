@@ -1,0 +1,44 @@
+@import "base/mixins";
+
+//标题
+.g-title{
+  width:560px;
+  height:59px;
+  margin:32px auto;
+  background-image:url("img/info_title_left.png"), url("img/info_title_right.png");
+  background-position:0 0,448px 0 ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  h1{
+    width:338px;
+    height:59px;
+    line-height:59px;
+    margin: 0 auto;
+    font-size: 36px;/*px*/
+    text-align: center;
+    color:#ffffff;
+    background-color:#58b415;
+  }
+}
+.g-section{
+  width:647px;
+  margin:0 auto;
+  line-height:50px;
+  img{
+    width:647px;
+    height:347px;
+  }
+  p{
+    font-size:30px;/*px*/
+    text-indent: 2em;
+  }
+}
+.g-culture__body.g-section{
+  p{
+    text-indent: 0em;
+    text-align: center;
+  }
+}
+.g-honour{
+  padding-bottom:114px;
+}
