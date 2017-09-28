@@ -292,12 +292,13 @@
 					text-decoration: none;
 					color: #404040;
 					h1 {
-						@include text-overflow
+						@include text-overflow;
 						font-size: 30px;
 						color:#404040;
 					}
 					span {
-						@include text-overflow
+						@include text-overflow;
+						display: block;
 						font-size: 24px;
 						color: #888;
 					}

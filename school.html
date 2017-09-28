@@ -7,26 +7,26 @@
 <meta name="description" content="" />
 <meta name="author" content="CGHY">
 <script src="lib/flexible.js"></script><!--ignore-->
-<title>晋级好习惯特训营</title>
+<title>晋级好习-校区展示</title>
 <link rel="stylesheet" href="modules/css/common.scss">
-<link rel="stylesheet" href="modules/css/training-book.scss">
+<link rel="stylesheet" href="modules/css/school.scss">
 </head>
 <body>
 <link rel="import" href="modules/widget/topBar/topBar.html?__inline">
 <div class="g-page">
-    <div class="g-title">
-        <h1>晋级好习惯特训营书籍展示</h1>
-    </div>
-    <div class="g-list">
-        <div class="item">
-            <img src="/img/training-book1.png" alt="" class="g-list__item"/>
-            <img src="/img/training-book2.png" alt="" class="g-list__item"/>
-        </div>
+    <div class="g-school">
+    	<div class="school__title">
+    	    <h1>校区展示</h1>
+    	</div>
+    	<ul class="school__list">
+    	</ul>
+        <div class="school__tips">努力加载中...</div>
     </div>
 </div>
 <link rel="import" href="modules/widget/bottomBar/bottomBar.html?__inline">
 <script src="lib/mod.js"></script>
 <script>
+    require.async('modules/app/school.js');
 </script>
 
 </body>
