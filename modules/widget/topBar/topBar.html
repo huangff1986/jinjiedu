@@ -1,12 +1,11 @@
 <script>
-	require('topBar.js');
 </script>
 <!-- 
 	引入方式
     <link rel="import" href="modules/widget/topBar/topBar.html?__inline">
 -->
 <div class="w-topBar">
-	<i href="##" class="topBar__btn topBar__btn--return"></i>
+	<a href="javascript:window.history.go(-1);" class="topBar__btn topBar__btn--return"></a>
 	<a href="index.html" class="topBar__btn topBar__btn--home"></a>
 	<h1 class="topBar__title">顶部标题</h1>
 </div>
