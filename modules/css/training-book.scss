@@ -1,7 +1,9 @@
 @import "base/mixins";
+
 .g-page{
   @include clearfix;
   width:750px;
+  height:573px*2;
   margin: 0 auto;
 }
 //标题
