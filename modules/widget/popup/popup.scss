@@ -1,0 +1,113 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+.w-popup {
+	position: fixed;
+	z-index: 1060;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, 0.7);
+	justify-content: center;
+	align-items: center;
+	.popup__container {
+		width: 662px;
+		background-color: #fff;
+		border-radius: 5px; /*no*/
+		overflow: hidden;
+		.popup__hd {
+		    height: 80px;
+		    background-image: url(/public/widget/popup/img/title.png);
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		    h3 {
+		        display: none;
+		    }
+		    .popup__close {
+		        float: right;
+		        display: block;
+		        width: 80px;
+		        height: 80px;
+		        background-image: url(/public/widget/popup/img/close.png);
+		        background-repeat: no-repeat;
+		        background-position: center;
+		        background-size: 50px 50px;
+		    }
+		}
+		.popup__bd {
+		    padding: 36px 48px 0;
+		    .form {
+		  	    .form__item {
+		  	    	@include clearfix;
+		  	        padding-bottom: 36px;
+		  	        .form__lab {
+		  	            float: left;
+		  	            min-height: 60px;
+		  	            width: 20%;
+		  	            line-height: 60px;
+		  	            font-size: 40px;
+		  	            color: #404040;
+		  	        }
+		  	        .form__ipt {
+		  	            position: relative;
+		  	            float: right;
+		  	            min-height: 32px;
+		  	            width: 80%;
+		  	            .u-ipt,.u-ta {
+	  	            	    width: 98%;
+	  	            	    height: 60px;
+	  	            	    padding-left: 1em;
+	  	            	    border: none;
+	  	            	    outline: none;
+	  	            	    border-radius: 5px;
+	  	            	    font-size: 32px;
+	  	            	    line-height: 60px;
+	  	            	    background: none;
+	  	            	    background-color: #eee;
+		  	            }
+		  	            .u-ta {
+		  	                height: auto;
+		  	            }
+		  	            p {
+		  	              position: absolute;
+		  	              bottom: -36px;
+		  	              height: 36px;
+		  	              line-height: 36px;
+		  	              font-size: 24px;
+		  	              color: #ff0000;
+		  	            }
+		  	        }
+		  	        .form__btn {
+		  	         	display: block;
+		  	         	width: 177px;
+		  	         	height: 64px;
+		  	         	border: none;
+		  	         	border-radius: 5px;
+		  	         	outline: none;
+		  	         	font-size: 32px;
+		  	         	line-height: 64px;
+		  	         	color: #fff;
+		  	         	background-color: #666;
+						&.form__btn--resetBtn {
+				  	        float: left;
+				  	    }
+				  	    &.form__btn--submitBtn {
+			  	          	background-color: #58b415;
+			  	         	float: right;
+			  	        }
+		  	        }
+		    	}
+		    }
+		}
+	}
+}

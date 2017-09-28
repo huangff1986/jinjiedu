@@ -1,0 +1,38 @@
+<script>
+	require('modules/widget/popup/popup');
+</script>
+
+<div class="w-popup" style="display:none;">
+	<div class="popup__container">
+		<div class="popup__hd">
+			<h3>留言板</h3>
+			<i class="popup__close"></i>
+		</div>
+		<div class="popup__bd">
+			<form class="form" action="#" method="get">
+				<div class="form__item">
+					<label class="form__lab">姓名:</label>
+					<div class="form__ipt">
+						<input placeholder="输入您的真实姓名" id="username" type="text" name="username" class="u-ipt"/>
+					</div>
+				</div>
+				<div class="form__item">
+					<label class="form__lab">手机:</label>
+					<div class="form__ipt">
+						<input placeholder="输入您的手机号码" id="phone" type="text" class="u-ipt" name="phone">
+					</div>
+				</div>
+				<div class="form__item">
+					<label class="form__lab">留言:</label>
+					<div class="form__ipt">
+						<textarea class="u-ta" placeholder="请输入您的咨询信息" name="comment" rows="2"></textarea>
+					</div>
+				</div>
+				<div class="form__item">
+					<input class="form__btn form__btn--resetBtn" type="reset" value="取消">
+					<input class="form__btn form__btn--submitBtn" type="submit" value="提交" />
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
