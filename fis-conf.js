@@ -1,6 +1,6 @@
 // 设置项目属性
 fis.set('project.name', ''); // 项目名称
-fis.set('project.web', 'http://60.205.211.234'); // 静态资源部署路径
+fis.set('project.web', 'http://www.m.me'); // 静态资源部署路径
 fis.set('project.static', 'public'); // 静态资源部署路径
 fis.set('project.files', ['*.html', 'map.json', '/mock/**']); // 指定需要编译的文件和改文件的引入支援
 
