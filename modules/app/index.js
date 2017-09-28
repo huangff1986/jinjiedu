@@ -13,6 +13,7 @@ fastclick.attach(document.body);
 // 代码部分
 var banner = new Swiper('.g-banner__swiper', {
 	loop: true,
+	autoplay: 3000,
 	pagination: '.swiper-pagination-banner'
 })
 
@@ -25,6 +26,7 @@ var rollBox = new Swiper('.g-rollBox__content', {
 
 var hot = new Swiper('.g-hot__banner', {
 	loop: true,
+	autoplay: 3000,
 	pagination: '.swiper-pagination-hot'
 })
 

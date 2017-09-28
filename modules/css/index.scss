@@ -140,8 +140,8 @@
 /* hot */
 .g-hot {
 	width:750px;
-	background-color: #fff;
 	overflow: hidden;
+	background-color: #fff;
 	.g-hot__title{
 		width:750px;
 		height:94px;
@@ -186,6 +186,7 @@
 	width: 750px;
 	height: 200px;
 	padding:24px 64px;
+	background-color: #fff;
 	.list {
 		width:100%;
 		height:100%;
@@ -215,16 +216,16 @@
 					font-size: 28px;
 				}
 				.item__icon--1 {
-					background-image: url('./img/nav-1.png?__inline')
+					background-image: url('./img/nav-icon-join.png')
 				}
 				.item__icon--2 {
-					background-image: url('./img/nav-2.png?__inline')
+					background-image: url('./img/nav-icon-business.png')
 				}
 				.item__icon--3 {
-					background-image: url('./img/nav-3.png?__inline')
+					background-image: url('./img/nav-icon-campus.png')
 				}
 				.item__icon--4 {
-					background-image: url('./img/nav-4.png?__inline')
+					background-image: url('./img/nav-icon-news.png')
 				}
 
 			}
