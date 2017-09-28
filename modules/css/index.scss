@@ -76,8 +76,8 @@
 .g-rollBox {
 	width:750px; 
 	height:144px; 
-	padding:32px 64px;
-
+	padding:32px 48px;
+	background-color: #f6f6f6;
 	.g-rollBox__title {
 		float: left;
 		width: 80px; 
@@ -96,9 +96,10 @@
 	}
 
 	.g-rollBox__content {
-		float: right;
+		float: left;
 		width: 492px; 
 		height:80px; 
+		margin-left: 32px;
 		overflow: hidden;
 		
 		.swiper-wrapper {
@@ -143,8 +144,7 @@
 	overflow: hidden;
 	.g-hot__title{
 		width:750px;
-		height:94px;
-		padding:32px 36px;
+		padding:32px 48px;
 		h1{
 			font-size: 32px; /*px*/
 			height:100%;
@@ -184,7 +184,7 @@
 .g-nav {
 	width: 750px;
 	height: 200px;
-	padding:24px 64px;
+	padding:24px 20px;
 	.list {
 		width:100%;
 		height:100%;
@@ -235,13 +235,13 @@
 .g-news{
 	width:750px;
 	font-size: 28px; /*px*/
-	background-color: #fff;
+	background-color: #f6f6f6;
 	.g-news__title {
 		overflow: hidden;
 		h3 {
 			float: left;
 			height: 100px;
-			padding: 32px 36px;
+			padding: 32px 48px;
 			font-size: 32px; /*px*/
 			line-height: 32px; /*px*/
 			font-weight: bolder;
@@ -250,7 +250,7 @@
 			float: right;
 			font-size: 28px;
 			line-height: 32px; /*px*/
-			padding: 32px 36px;
+			padding: 32px 48px;
 			color: #58b415;
 			text-decoration: none;
 		}
@@ -277,7 +277,7 @@
 					position: absolute;
 					display: block;
 					top: 10px; /*px*/
-					left: -34px; /*px*/
+					left: -30px; /*px*/
 					width:20px; /*px*/
 					height:20px; /*px*/
 					content:'';
@@ -311,13 +311,13 @@
 .g-school {
 	width:750px;
 	font-size: 28px; /*px*/
-	background-color: #fff;
+	background-color: #f6f6f6;
 	.g-school__title{
 		overflow: hidden;
 		h3 {
 			float: left;
 			height: 100px;
-			padding: 32px 36px;
+			padding: 32px 48px;
 			font-size: 32px; /*px*/
 			line-height: 32px; /*px*/
 			font-weight: bolder;
@@ -326,7 +326,7 @@
 			float: right;
 			font-size: 28px;
 			line-height: 32px; /*px*/
-			padding: 32px 36px;
+			padding: 32px 48px;
 			color: #58b415;
 			text-decoration: none;
 		}
