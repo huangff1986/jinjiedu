@@ -1,0 +1,432 @@
+@import "base/mixins";
+.g-page{
+  @include clearfix;
+  width:750px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+/* header */
+.g-header {
+  width:750px;
+  height:98px;
+  padding:0 42px;
+  background-color: #58b415;
+
+  .g-header__logo {
+    float: left;
+    width: 222px;
+    height: 100%;
+    .logo{
+      @include hide-text;
+      width: 100%;
+      height: 100%;
+      background-image: url('./img/logo.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+    }
+  }
+
+  .g-header__400 {
+    float: right;
+    width: 224px;
+    height: 100%;
+    .phone{
+      @include hide-text;
+      width: 100%;
+      height: 100%;
+      background-image: url('./img/400.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}
+.g-banner{
+  width:750px;
+  height:280px;
+  background-image: url('./img/teamworking-banner.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.g-inset{
+  width:740px;
+  height:460px;
+  margin: 0 auto;
+  background:url('./img/teamworking-inset.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.g-section{
+  width:750px;
+  color:#666666;
+  .g-section__item--A{
+    width:100%;
+    padding:42px 42px 21px 42px;
+    background: url("./img/teamworking-A.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:0px 42px;
+    p{
+      padding-top:274px;
+      font-size: 28px;/*px*/
+      text-align: justify;
+      line-height:50px;/*px*/
+    }
+  }
+  .g-section__item--B{
+    width:100%;
+    padding:0px 42px;
+    background: url("./img/teamworking-B.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    font-size: 28px;/*px*/
+    .g-item__B--top{
+      padding-top:180px;
+      width:410px;
+      line-height:50px;/*px*/
+      text-align: justify;
+    }
+    .g-item__B--bottom{
+      width:490px;
+      line-height:50px;/*px*/
+      text-align: justify;
+    }
+  }
+  .g-section__item--C{
+    width:100%;
+    padding:0 42px 42px;
+    background: url("./img/teamworking-C.png");
+    background-size: 693px 501px;
+    background-repeat: no-repeat;
+    background-position: 42px 28px;
+    font-size: 28px;/*px*/
+    p{
+      padding-top: 545px;
+      text-align: justify;
+      line-height:50px;/*px*/
+    }
+  }
+  .g-section__item--D{
+    width:750px;
+    height:344px;
+    background-image: url("./img/teamworking-D.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 28px;/*px*/
+    p{
+      padding: 100px 42px 0 42px;
+      text-align: justify;
+      line-height:50px;/*px*/
+    }
+  }
+  .g-section__item--E{
+    width:750px;
+    padding:42px;
+    margin:20px 0;
+    background-image: url("./img/teamworking-E.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 28px;/*px*/
+    p{
+      padding-top:90px;
+      padding-left:240px;
+      text-align: justify;
+    }
+  }
+  .g-section__item--F{
+    position: relative;
+    width:100%;
+    height:510px;
+    margin-bottom:30px ;
+    .g-item__F--one{
+      position: absolute;
+      top:0px;
+      left:42px;
+      width:236px;
+      height:189px;
+      background-image: url("./img/item__F--a.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .g-item__F--two{
+      position: absolute;
+      top:201px;
+      left:42px;
+      width:236px;
+      height:309px;
+      background-image: url("./img/item__F--b.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .g-item__F--three{
+      position: absolute;
+      top:363px;
+      left:288px;
+      width:216px;
+      height:147px;
+      background-image: url("./img/item__F--c.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .g-item__F--four{
+      position: absolute;
+      top:363px;
+      left:513px;
+      width:196px;
+      height:147px;
+      background-image: url("./img/item__F--d.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .g-item__F--five{
+      @include hide-text;
+      position: absolute;
+      top:0px;
+      left:288px;
+      width:421px;
+      height:351px;
+      background-image: url("./img/item__F--e.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+  .g-section__item--G{
+    width:750px;
+    height:344px;
+    background-image: url("./img/teamworking-G.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    p{
+      @include hide-text;
+    }
+  }
+  .g-section__item--H{
+    position: relative;
+    width:750px;
+    height:767px;
+    .g-item__H--one{
+      position: absolute;
+      top:72px;
+      left:10px;
+      width:237px;
+      height:146px;
+      background-image: url("./img/item__H--a.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .g-item__H--two{
+      position: absolute;
+      top:72px;
+      left:255px;
+      width:237px;
+      height:146px;
+      background-image: url("./img/item__H--b.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .g-item__H--three{
+      position: absolute;
+      top:72px;
+      left:500px;
+      width:237px;
+      height:146px;
+      background-image: url("./img/item__H--c.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .g-item__H--four{
+      position: absolute;
+      top:223px;
+      left:10px;
+      width:237px;
+      height:338px;
+      background-image: url("./img/item__H--d.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .g-item__H--five{
+      position: absolute;
+      top:568px;
+      left:10px;
+      width:237px;
+      height:147px;
+      background-image: url("./img/item__H--e.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .g-item__H--six{
+      @include hide-text;
+      position: absolute;
+      top:223px;
+      left:255px;
+      width:482px;
+      height:494px;
+      background-image: url("./img/item__H--f.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+  .g-section__item--I{
+    padding:0 10px;
+    img{
+      width:730px;
+      height:455px;
+    }
+    p{
+      padding:42px 42px 0px 42px;
+      font-size: 28px;/*px*/
+      line-height: 50px;/*px*/
+    }
+  }
+  .g-section__item--J{
+    @include hide-text;
+    width:750px;
+    height:1106px;
+    background-image: url("./img/item__J--bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+.g-footer{
+  @include clearfix;
+  width:750px;
+  height:214px;
+  padding:34px 42px 0px 42px;
+  border-top: 12px solid #a9dc84;
+  background-color:#ccc;
+  color:#fff;
+  .g-footer__QR{
+    @include clearfix;
+    float:left;
+    width:314px;
+    height:114px;
+    .g-qr__item{
+      float:left;
+      margin-left:20px;
+      img{
+        width:93px;
+        height:93px;
+      }
+      h5{
+        font-size:16.67px;/*px*/
+      }
+    }
+
+  }
+  .g-footer__info{
+    float:left;
+    width:322px;
+    height:114px;
+    ul{
+      li{
+        font-size: 19.44px;/*px*/
+        line-height: 30px;/*px*/
+      }
+    }
+  }
+  .g-footer__copyright{
+    float:left;
+    width:100%;
+    height:54px;
+    padding-top:34px;
+    font-size: 13.89px;/*px*/
+    text-align: center;
+  }
+}
+.g-toolbar{
+  position: fixed;
+  bottom:155px;
+  right:18px;
+  width:70px;
+  height:160px;
+  ul{
+    width:100%;
+    .g-toolbar__top{
+      width:100%;
+      height:80px;
+      background: #eee;
+      opacity: .7;
+      .g-toolbar__icon--top{
+        display: block;
+        padding:8px 9px 0px 9px;
+        width:70px;
+        height:60px;
+        background-image: url("./img/go-top.png");
+        background-repeat: no-repeat;
+        background-size: 42px 42px;
+        background-position: center center;
+      }
+      h5{
+        font-size: 13px;/*px*/
+        color:#818181;
+        text-align: center;
+      }
+    }
+    .g-toolbar__msg{
+      width:100%;
+      height:80px;
+      background: #ff6600;
+      opacity: .7;
+      .g-toolbar__icon--bottom{
+        display: block;
+        padding:8px 9px 0px 9px;
+        width:70px;
+        height:60px;
+        background-image: url("./img/leavemsg.png");
+        background-repeat: no-repeat;
+        background-size: 42px 42px;
+        background-position: center center;
+      }
+      h5{
+        font-size: 13px;/*px*/
+        color:#fff;
+        text-align: center;
+      }
+    }
+  }
+}
+.g-more{
+  position: relative;
+  width:750px;
+  height:304px;
+  padding:42px;
+  background-image: url("./img/more-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: #fff;
+  .g-icon__phonecall{
+    position: absolute;
+    top:160px;
+    left:470px;
+    width:65px;
+    height:75px;
+    background-image: url("./img/icon-phonecall.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+}
+.tada{
+  animation-iteration-count:infinite;
+}

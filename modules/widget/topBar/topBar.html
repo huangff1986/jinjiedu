@@ -1,4 +1,7 @@
 <script>
+
+    var a=document.getElementById("topBar__title");
+    a[0].innerHTML=document.title;
 </script>
 <!-- 
 	引入方式
@@ -7,5 +10,5 @@
 <div class="w-topBar">
 	<a href="javascript:window.history.go(-1);" class="topBar__btn topBar__btn--return"></a>
 	<a href="index.html" class="topBar__btn topBar__btn--home"></a>
-	<h1 class="topBar__title">顶部标题</h1>
+	<h1 class="topBar__title" id="topBar__title">顶部标题</h1>
 </div>

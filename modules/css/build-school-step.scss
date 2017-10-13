@@ -1,0 +1,274 @@
+@import "base/mixins";
+.g-page{
+  @include clearfix;
+  width:750px;
+  margin: 0 auto;
+}
+/* header */
+.g-header {
+  width:750px;
+  height:98px;
+  padding:0 42px;
+  background-color: #58b415;
+
+  .g-header__logo {
+    float: left;
+    width: 222px;
+    height: 100%;
+    .logo{
+      @include hide-text;
+      width: 100%;
+      height: 100%;
+      background-image: url('./img/logo.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+    }
+  }
+
+  .g-header__400 {
+    float: right;
+    width: 224px;
+    height: 100%;
+    .phone{
+      @include hide-text;
+      width: 100%;
+      height: 100%;
+      background-image: url('./img/400.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}
+.g-banner{
+  width:750px;
+  height:393px;
+  background:url('./img/build-school-banner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.g-section{
+  width:750px;
+  padding:36px 0px 0px 0px;
+  background: #fff;
+  .g-section__title{
+    width:466px;
+    height:34px;
+    margin-left:142px;
+    margin-bottom:30px;
+    background: url("./img/school-section-title.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+  }
+  .g-section__content{
+    width:100%;
+    .g-section__step{
+      width:100%;
+      padding:0 42px;
+      .g-step__title{
+        width:100%;
+        height:63px;
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        margin-bottom: 41px;
+      }
+      .g-step__title--one{
+        background-image: url("./img/step-title-one.png");
+      }
+      .g-step__title--two{
+        background-image: url("./img/step-title-two.png");
+        background-position: 334px 0;
+      }
+      .g-step__title--three{
+        background-image: url("./img/step-title-three.png");
+      }
+      .g-step__title--four{
+        background-image: url("./img/step-title-four.png");
+        background-position: 334px 0;
+      }
+      .g-step__title--five{
+        background-image: url("./img/step-title-five.png");
+      }
+      .g-step__title--six{
+        background-image: url("./img/step-title-six.png");
+        background-position: 334px 0;
+      }
+      img{
+        width:666px;
+        height:350px;
+        margin-bottom:37px;
+      }
+      p{
+        font-size:28px;/*px*/
+        line-height: 45px;/*px*/
+      }
+      .g-step__link{
+        display: block;
+        margin: 35px auto;
+        width:180px;
+        height:46px;
+        line-height: 46px;
+        text-align: center;
+        border:2px solid #ffa6cd;
+        border-radius: 23px;
+      }
+    }
+    .g_step__four{
+      padding-top:16px;
+      padding-bottom:18px;
+      background: #f3f2f2;
+      img{
+        height:349px;
+      }
+    }
+    .g_step__five {
+      padding-top: 26px;
+    }
+    .g_step__six{
+      background: #f3f2f2;
+      padding-top: 26px;
+      margin-bottom:26px;
+      img{
+        height:580px;
+      }
+    }
+  }
+  .g-section__footer{
+    width:666px;
+    height:110px;
+    margin-left:42px;
+    margin-top:14px;
+    background: url("./img/school-section-footer.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+  }
+}
+.g-footer{
+  @include clearfix;
+  width:750px;
+  height:214px;
+  padding:34px 42px 0px 42px;
+  border-top: 12px solid #a9dc84;
+  background-color:#ccc;
+  color:#fff;
+  .g-footer__QR{
+    @include clearfix;
+    float:left;
+    width:314px;
+    height:114px;
+    .g-qr__item{
+      float:left;
+      margin-left:20px;
+      img{
+        width:93px;
+        height:93px;
+      }
+      h5{
+        font-size:16.67px;/*px*/
+      }
+    }
+
+  }
+  .g-footer__info{
+    float:left;
+    width:322px;
+    height:114px;
+    ul{
+      li{
+        font-size: 19.44px;/*px*/
+        line-height: 30px;/*px*/
+      }
+    }
+  }
+  .g-footer__copyright{
+    float:left;
+    width:100%;
+    height:54px;
+    padding-top:34px;
+    font-size: 13.89px;/*px*/
+    text-align: center;
+  }
+}
+.g-toolbar{
+  position: fixed;
+  bottom:155px;
+  right:18px;
+  width:70px;
+  height:160px;
+  ul{
+    width:100%;
+    .g-toolbar__top{
+      width:100%;
+      height:80px;
+      background: #eee;
+      opacity: .7;
+      .g-toolbar__icon--top{
+        display: block;
+        padding:8px 9px 0px 9px;
+        width:70px;
+        height:60px;
+        background-image: url("./img/go-top.png");
+        background-repeat: no-repeat;
+        background-size: 42px 42px;
+        background-position: center center;
+      }
+      h5{
+        font-size: 13px;/*px*/
+        color:#818181;
+        text-align: center;
+      }
+    }
+    .g-toolbar__msg{
+      width:100%;
+      height:80px;
+      background: #ff6600;
+      opacity: .7;
+      .g-toolbar__icon--bottom{
+        display: block;
+        padding:8px 9px 0px 9px;
+        width:70px;
+        height:60px;
+        background-image: url("./img/leavemsg.png");
+        background-repeat: no-repeat;
+        background-size: 42px 42px;
+        background-position: center center;
+      }
+      h5{
+        font-size: 13px;/*px*/
+        color:#fff;
+        text-align: center;
+      }
+    }
+  }
+}
+.g-more{
+  position: relative;
+  width:750px;
+  height:304px;
+  padding:42px;
+  background-image: url("./img/more-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: #fff;
+  .g-icon__phonecall{
+    position: absolute;
+    top:160px;
+    left:470px;
+    width:65px;
+    height:75px;
+    background-image: url("./img/icon-phonecall.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+}
+.tada{
+  animation-iteration-count:infinite;
+}

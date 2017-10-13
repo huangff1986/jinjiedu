@@ -1,0 +1,498 @@
+@import "base/mixins";
+.g-page{
+  @include clearfix;
+  width:750px;
+  margin: 0 auto;
+}
+/* header */
+.g-header {
+  width:750px;
+  height:98px;
+  padding:0 42px;
+  background-color: #58b415;
+
+  .g-header__logo {
+    float: left;
+    width: 222px;
+    height: 100%;
+    .logo{
+      @include hide-text;
+      width: 100%;
+      height: 100%;
+      background-image: url('./img/logo.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+    }
+  }
+
+  .g-header__400 {
+    float: right;
+    width: 224px;
+    height: 100%;
+    .phone{
+      @include hide-text;
+      width: 100%;
+      height: 100%;
+      background-image: url('./img/400.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}
+.g-banner{
+  width:750px;
+  height:370px;
+  background-image: url('./img/admissions-broken.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.g-annoyance{
+  position: relative;
+  width:750px;
+  height:590px;
+  background:#f0ffec;
+  .g-annoyance__one{
+    position: absolute;
+    top:32px;
+    left:32px;
+    width:285px;
+    height:200px;
+    background-image: url("./img/annoyance(2).png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .g-annoyance__two{
+    position: absolute;
+    top:32px;
+    right:32px;
+    width:288px;
+    height:240px;
+    background-image: url("./img/annoyance(3).png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .g-annoyance__three{
+    position: absolute;
+    bottom:25px;
+    left:15px;
+    width:299px;
+    height:277px;
+    background-image: url("./img/annoyance(6).png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .g-annoyance__four{
+    position: absolute;
+    bottom:98px;
+    right:15px;
+    width:303px;
+    height:204px;
+    background-image: url("./img/annoyance(5).png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .g-annoyance__five{
+    position: absolute;
+    top:146px;
+    left:300px;
+    width:136px;
+    height:270px;
+    background-image: url("./img/annoyance(4).png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+.g-spectacle{
+  width:750px;
+  background: #f8f8f8;
+  .g-spectacle__title{
+    height:100px;
+    line-height: 100px;/*px*/
+    text-align:center;
+    font-size:32px;/*px*/
+    span{
+      font-size:40px;/*px*/
+      font-weight: bold;
+    }
+  }
+  .g-spectacle__content{
+    width:702px;
+    height:1330px;
+    margin:0px 24px;
+    background-image: url('./img/spectrcle-content-top.png'),url('./img/spectrcle-content-bottom.png');
+    background-size: 100%,100%;
+    background-repeat: no-repeat,no-repeat;
+    background-position:top center,bottom center;
+    .g-spectacle__content--header{
+      width:100%;
+      padding:32px 48px;
+      font-size: 28px;
+      text-indent: 2em;
+      text-align: justify;
+    }
+    .g-spectacle__content--body{
+      width:678px;
+      height:1172px;
+      margin:0 auto;
+      background: url("./img/wechat-talk.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+  .g-spectacle__summary{
+    width:750px;
+    height:266px;
+    padding:48px 151px;
+    p{
+      width:448px;
+      height:170px;
+      background-image: url("./img/recruitment-word-1.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}
+.g-discuss{
+  padding:24px;
+  width:750px;
+  height:470px;
+  background:url('./img/discuss.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  p{
+    font-size:28px;
+    line-height:39px;
+    text-indent: 2em;
+    text-align: justify;
+  }
+}
+.g-solution{
+  width:750px;
+  background: #f8f8f8;
+  .g-solution__title{
+    width:100%;
+    height:132px;
+    padding:32px 115px;
+    h1{
+      width:100%;
+      height:100%;
+      background:url('./img/recruitment-word-2.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center center;
+    }
+  }
+  .g-solution__content {
+    width:100%;
+    padding:0px 24px;
+    .g-solution__item {
+      width:702px;
+      height:134px;
+      overflow: hidden;
+      padding:32px 78px 32px 120px;
+      font-size:28px;/*px*/
+      border-radius: 10px;
+      border:1px solid #9b9b9b;
+      margin-bottom:32px;
+      box-shadow:5px 5px 5px  #b3b3b3;
+      background-size:100%;
+      background-position: top left;
+      background-repeat: no-repeat;
+      text-indent: 2em;
+      .solution__item--content{
+        visibility:hidden;
+      }
+    }
+    .g-solution__item--A{
+      background-image: url("./img/solution-A.png");
+    }
+    .g-solution__item--B{
+      background-image: url("./img/solution-B.png");
+    }
+    .g-solution__item--C{
+      background-image: url("./img/solution-C.png");
+    }
+    .g-solution__item--D{
+      background-image: url("./img/solution-D.png");
+    }
+  }
+}
+.g-talents{
+  width:750px;
+  height:820px;
+  background: #f2d8cc;
+  .g-talents__title{
+    width:100%;
+    height:100px;
+    line-height: 100px;
+    font-size:36px;/*px*/
+    font-weight: bold;
+    text-align: center;
+  }
+  .g-talents__content{
+    position: absolute;
+    width:100%;
+    height:720px;
+    .g-talents__content--one{
+      position: absolute;
+      top:90px;
+      left:36px;
+      width:286px;
+      height:326px;
+      background-image: url("./img/talents-item(1).png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+    .g-talents__content--two{
+      position: absolute;
+      top:0px;
+      right:36px;
+      width:375px;
+      height:208px;
+      background-image: url("./img/talents-item(4).png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      border-radius: 5px;
+    }
+    .g-talents__content--three{
+      position: absolute;
+      top:240px;
+      right:36px;
+      width:375px;
+      height:208px;
+      background-image: url("./img/talents-item(2).png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      border-radius: 5px;
+    }
+    .g-talents__content--four{
+      position: absolute;
+      top:480px;
+      right:36px;
+      width:667px;
+      height:326px;
+      background-image: url("./img/talents-item(3).png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      border-radius: 5px;
+    }
+  }
+}
+.g-poster{
+  width:750px;
+  height:266px;
+  padding:48px 151px;
+  background: #f8f8f8;
+  p{
+    width:448px;
+    height:170px;
+    background-image: url("./img/recruitment-word-3.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+.g-case{
+  width:750px;
+  height:1688px;
+  background:url("./img/recruitment-case.png") ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.g-emphasis{
+  width:100%;
+  padding:48px 80px;
+  background: #f8f8f8;
+  h1{
+    width:100%;
+    height:177px;
+    background:url("./img/recruitment-word-4.png") ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .g-emphasis__btn{
+    display: block;
+    width:515px;
+    height:110px;
+    margin: 48px auto;
+    background-image: url("./img/recruiment-btn-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  p{
+    width:100%;
+    height:130px;
+    background:url("./img/recruitment-word-5.png") ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+.g-product{
+  width:750px;
+  height:400px;
+  background:url("./img/recruiment-prd.png") ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.g-info{
+  width:750px;
+  padding:50px;
+  p{
+    font-size: 28px;/*px*/
+    font-weight: bold;
+    line-height: 45px;/*px*/
+    text-align: center;
+    span{
+      color:#ff0000;
+    }
+  }
+}
+/**修改bounce为无限次**/
+.bounce{
+  animation-iteration-count:infinite;
+}
+
+.g-footer{
+  @include clearfix;
+  width:750px;
+  height:214px;
+  padding:34px 42px 0px 42px;
+  border-top: 12px solid #a9dc84;
+  background-color:#ccc;
+  color:#fff;
+  .g-footer__QR{
+    @include clearfix;
+    float:left;
+    width:314px;
+    height:114px;
+    .g-qr__item{
+      float:left;
+      margin-left:20px;
+      img{
+        width:93px;
+        height:93px;
+      }
+      h5{
+        font-size:16.67px;/*px*/
+      }
+    }
+
+  }
+  .g-footer__info{
+    float:left;
+    width:322px;
+    height:114px;
+    ul{
+      li{
+        font-size: 19.44px;/*px*/
+        line-height: 30px;/*px*/
+      }
+    }
+  }
+  .g-footer__copyright{
+    float:left;
+    width:100%;
+    height:54px;
+    padding-top:34px;
+    font-size: 13.89px;/*px*/
+    text-align: center;
+  }
+}
+.g-toolbar{
+  position: fixed;
+  bottom:155px;
+  right:18px;
+  width:70px;
+  height:160px;
+  ul{
+    width:100%;
+    .g-toolbar__top{
+      width:100%;
+      height:80px;
+      background: #eee;
+      opacity: .7;
+      .g-toolbar__icon--top{
+        display: block;
+        padding:8px 9px 0px 9px;
+        width:70px;
+        height:60px;
+        background-image: url("./img/go-top.png");
+        background-repeat: no-repeat;
+        background-size: 42px 42px;
+        background-position: center center;
+      }
+      h5{
+        font-size: 13px;/*px*/
+        color:#818181;
+        text-align: center;
+      }
+    }
+    .g-toolbar__msg{
+      width:100%;
+      height:80px;
+      background: #ff6600;
+      opacity: .7;
+      .g-toolbar__icon--bottom{
+        display: block;
+        padding:8px 9px 0px 9px;
+        width:70px;
+        height:60px;
+        background-image: url("./img/leavemsg.png");
+        background-repeat: no-repeat;
+        background-size: 42px 42px;
+        background-position: center center;
+      }
+      h5{
+        font-size: 13px;/*px*/
+        color:#fff;
+        text-align: center;
+      }
+    }
+  }
+}
+.g-more{
+  position: relative;
+  width:750px;
+  height:304px;
+  padding:42px;
+  background-image: url("./img/more-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: #fff;
+  .g-icon__phonecall{
+    position: absolute;
+    top:160px;
+    left:470px;
+    width:65px;
+    height:75px;
+    background-image: url("./img/icon-phonecall.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+}
+.tada{
+  animation-iteration-count:infinite;
+}
