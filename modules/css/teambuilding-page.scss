@@ -1,0 +1,501 @@
+@import "base/mixins";
+.g-page{
+  @include clearfix;
+  width:750px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+/* header */
+.g-header {
+  width:750px;
+  height:98px;
+  padding:0 42px;
+  background-color: #58b415;
+
+  .g-header__logo {
+    float: left;
+    width: 222px;
+    height: 100%;
+    .logo{
+      @include hide-text;
+      width: 100%;
+      height: 100%;
+      background-image: url('./img/logo.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+    }
+  }
+
+  .g-header__400 {
+    float: right;
+    width: 224px;
+    height: 100%;
+    .phone{
+      @include hide-text;
+      width: 100%;
+      height: 100%;
+      background-image: url('./img/400.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}
+.g-banner{
+  width:750px;
+  height:1100px;
+  background-image: url('./img/teambuilding-banner.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.g-section{
+  width:750px;
+  .g-section__item{
+    width:100%;
+    margin-top:24px;
+    .g-section__item--title{
+      @include hide-text;
+      width:300px;
+      height:45px;
+      margin-left: 26px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: 0 0;
+    }
+  }
+  .item-A{
+    .g-section__item--title{
+      background-image: url("./img/teambuilding-title(1).png");
+    }
+    .g-section__item--content{
+      margin: 30px 0;
+      width:100%;
+      height:490px;
+      background-image: url("./img/teamworking-a-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center center;
+      .item-A__question{
+        width:160px;
+        height:490px;
+        margin-left: 45px;
+        background: url("./img/teamworking-a-bg2.png");
+        ul {
+          width: 90%;
+          height: 100%;
+          margin-left: 10%;
+          color: #fff;
+          li {
+            float: left;
+            width: 50px;
+            height: 100%;
+            padding-top:20px;
+            word-wrap: break-word;
+            layotut-flow: vertical-ideographic;
+            font-size: 20px;
+            span {
+              font-size: 28px;
+            }
+          }
+          .item-A__question--more{
+            margin-right: 20px;
+            background-image: url('./img/teambuilding-a-icon_06.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center 410px;
+          }
+        }
+      }
+      .item-A__answer{
+        display: none;
+        width:290px;
+        height:490px;
+        margin-left: 45px;
+        background: url("./img/teamworking-a-bg2.png");
+        ul{
+          width:90%;
+          height:100%;
+          margin-left: 10%;
+          color:#fff;
+          li{
+            float:left;
+            width:50px;
+            height:100%;
+            padding-top:20px;
+            word-wrap: break-word;
+            layotut-flow:vertical-ideographic;
+            font-size: 20px;
+            span{
+              font-size: 28px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .item-B {
+    .g-section__item--title {
+      background-image: url("./img/teambuilding-title(2).png");
+    }
+    .g-section__item--content{
+      width:100%;
+      padding:30px 118px 0px;
+      div{
+        width:100%;
+        height:96px;
+        margin-bottom:30px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center center;
+        p{
+          width:380px;
+          padding-top:10px;
+          margin-left:120px;
+          text-align: center;
+          color:#fff;
+          font-size:28px;
+          line-height: 40px;
+        }
+      }
+      .item-B__one{
+        background-image: url("./img/item-b(1).png");
+      }
+      .item-B__two{
+        background-image: url("./img/item-b(2).png");
+      }
+      .item-B__three{
+        background-image: url("./img/item-b(3).png");
+      }
+    }
+  }
+  .item-C{
+    position: relative;
+    width:750px;
+    height:1378px;
+    background-image: url("./img/teambuilding-step-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    color:#fff;
+    .battery{
+      position: absolute;
+      top:108px;
+      left:96px;
+      width:105px;
+      .battery-progress{
+        width:0px;
+        height:48px;
+        background: #22c31e;
+      }
+    }
+    .item-c__one,.item-c__two,.item-c__three,.item-c__four,.item-c__five,.item-c__six,.item-c__seven,.item-c__eight,.item-c__nine,.item-c__ten,.item-c__eleven{
+      position: absolute;
+      font-size: 28px;
+    }
+    .item-c__four,.item-c__five{
+      font-size: 22px;
+    }
+    .item-c__six,.item-c__seven,.item-c__eight{
+      font-size: 26px;
+    }
+    .item-c__ten,.item-c__eleven{
+      color:#ff9600;
+    }
+    .item-c__one{
+      top:180px;
+      left:80px;
+    }
+    .item-c__two{
+      top:316px;
+      left:365px;
+    }
+    .item-c__three{
+      top:400px;
+      left:150px;
+    }
+    .item-c__four{
+      top:506px;
+      left:159px;
+    }
+    .item-c__five{
+      top:623px;
+      left:140px;
+    }
+    .item-c__six{
+      top:986px;
+      left:64px;
+    }
+    .item-c__seven{
+      top:1025px;
+      left:228px;
+    }
+    .item-c__eight{
+      top:1062px;
+      left:380px;
+    }
+    .item-c__nine{
+      top:1250px;
+      left:84px;
+    }
+    .item-c__ten{
+      top:1250px;
+      left:286px;
+    }
+    .item-c__eleven{
+      top:1250px;
+      left:492px;
+    }
+  }
+  .item-D{
+    .g-section__item--title{
+      background-image: url("./img/teambuilding-title(6).png");
+    }
+    .g-section__item--content{
+      width:720px;
+      height:482px;
+      margin:42px 15px ;
+      background-image: url("./img/teambuilding-item-d-bg.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center center;
+      ul{
+        margin-left:455px;
+        padding-top:20px;
+        width:180px;
+        height:100%;
+        color:#fff;
+        li{
+          float:left;
+          width:60px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .item-E{
+    .g-section__item--title{
+      background-image: url("./img/teambuilding-title(7).png");
+    }
+    .g-section__item--content{
+      width:100%;
+      height:290px;
+      padding:42px;
+      .item-e__one{
+        width:168px;
+        height:200px;
+        margin-right:5px;
+      }
+      .item-e__two{
+        width:306px;
+        height:200px;
+        margin-right:5px;
+      }
+      .item-e__three{
+        width:142px;
+        height:200px;
+      }
+    }
+  }
+  .item-F{
+    .g-section__item--title{
+      background-image: url("./img/teambuilding-title(8).png");
+    }
+    .g-section__item--content{
+      width:750px;
+      height:250px;
+      padding:0px 96px;
+      ul{
+        margin-top:42px;
+        padding:20px 50px;
+        float:left;
+        width:252px;
+        height:162px;
+        line-height: 40px;
+        background-image: url("./img/teambuilding-f(1).png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center center;
+      }
+      .item-f__inset{
+        float:right;
+        width:196px;
+        height:241px;
+        background-image: url("./img/teambuilding-f(2).png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center center;
+      }
+    }
+  }
+  .item-G{
+    .g-section__item--title{
+      background-image: url("./img/teambuilding-title(9).png");
+    }
+    .g-section__item--content{
+      width:100%;
+      padding:42px 61px;
+      img{
+        width:100%;
+        height:auto;
+        margin-bottom: 30px;
+      }
+      p{
+        font-size: 26px;
+        line-height: 40px;
+        span{
+          font-weight: bold;
+          color:#ff0000;
+        }
+      }
+    }
+  }
+  .item-H{
+    .g-section__item--title{
+      background-image: url("./img/teambuilding-title(10).png");
+    }
+    .g-section__item--content{
+      width:666px;
+      height:472px;
+      margin:42px 42px;
+      background-image: url("./img/teambuilding-h-bg.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center center;
+    }
+    .g-section__item--inset{
+      width:750px;
+      height:1130px;
+      background-image: url("./img/teambuilding-h-inset_15.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center center;
+    }
+  }
+}
+.g-footer{
+  @include clearfix;
+  width:750px;
+  height:214px;
+  padding:34px 42px 0px 42px;
+  border-top: 12px solid #a9dc84;
+  background-color:#ccc;
+  color:#fff;
+  .g-footer__QR{
+    @include clearfix;
+    float:left;
+    width:314px;
+    height:114px;
+    .g-qr__item{
+      float:left;
+      margin-left:20px;
+      img{
+        width:93px;
+        height:93px;
+      }
+      h5{
+        font-size:16.67px;/*px*/
+      }
+    }
+
+  }
+  .g-footer__info{
+    float:left;
+    width:322px;
+    height:114px;
+    ul{
+      li{
+        font-size: 19.44px;/*px*/
+        line-height: 30px;/*px*/
+      }
+    }
+  }
+  .g-footer__copyright{
+    float:left;
+    width:100%;
+    height:54px;
+    padding-top:34px;
+    font-size: 13.89px;/*px*/
+    text-align: center;
+  }
+}
+.g-toolbar{
+  position: fixed;
+  bottom:155px;
+  right:18px;
+  width:70px;
+  height:160px;
+  ul{
+    width:100%;
+    .g-toolbar__top{
+      width:100%;
+      height:80px;
+      background: #eee;
+      opacity: .7;
+      .g-toolbar__icon--top{
+        display: block;
+        padding:8px 9px 0px 9px;
+        width:70px;
+        height:60px;
+        background-image: url("./img/go-top.png");
+        background-repeat: no-repeat;
+        background-size: 42px 42px;
+        background-position: center center;
+      }
+      h5{
+        font-size: 13px;/*px*/
+        color:#818181;
+        text-align: center;
+      }
+    }
+    .g-toolbar__msg{
+      width:100%;
+      height:80px;
+      background: #ff6600;
+      opacity: .7;
+      .g-toolbar__icon--bottom{
+        display: block;
+        padding:8px 9px 0px 9px;
+        width:70px;
+        height:60px;
+        background-image: url("./img/leavemsg.png");
+        background-repeat: no-repeat;
+        background-size: 42px 42px;
+        background-position: center center;
+      }
+      h5{
+        font-size: 13px;/*px*/
+        color:#fff;
+        text-align: center;
+      }
+    }
+  }
+}
+.g-more{
+  position: relative;
+  display: block;
+  width:750px;
+  height:304px;
+  padding:42px;
+  background-image: url("./img/more-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: #fff;
+  .g-icon__phonecall{
+    position: absolute;
+    top:160px;
+    left:470px;
+    width:65px;
+    height:75px;
+    background-image: url("./img/icon-phonecall.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+}
+.tada{
+  animation-iteration-count:infinite;
+}

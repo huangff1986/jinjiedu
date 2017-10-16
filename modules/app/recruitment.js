@@ -17,12 +17,5 @@ $(".g-solution__item").click(function() {
         setTimeout($(this).find(".solution__item--content").css({"visibility": "visible"}),1000);
     }
 });
-/*setInterval(function(){
-    if($(".g-emphasis__btn").hasClass("bounce")){
-        $(".g-emphasis__btn").removeClass("bounce");
-    }else{
-        $(".g-emphasis__btn").addClass("bounce");
-    }
-},1000);*/
 
 

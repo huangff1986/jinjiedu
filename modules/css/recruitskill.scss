@@ -1,0 +1,373 @@
+@import "base/mixins";
+.g-page{
+  @include clearfix;
+  width:750px;
+  margin: 0 auto;
+  background: url("./img/recruitskill-bg.png");
+}
+/* header */
+.g-header {
+  width:750px;
+  height:98px;
+  padding:0 42px;
+  background-color: #58b415;
+
+  .g-header__logo {
+    float: left;
+    width: 222px;
+    height: 100%;
+    .logo{
+      @include hide-text;
+      width: 100%;
+      height: 100%;
+      background-image: url('./img/logo.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+    }
+  }
+
+  .g-header__400 {
+    float: right;
+    width: 224px;
+    height: 100%;
+    .phone{
+      @include hide-text;
+      width: 100%;
+      height: 100%;
+      background-image: url('./img/400.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}
+.g-banner{
+  width:750px;
+  height:400px;
+  background-image: url('./img/recruitskill-banner.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.g-subject{
+  width:750px;
+  .g-subject__item{
+    width:100%;
+    .g-item__title{
+      width:362px;
+      height:166px;
+      margin:48px 194px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .g-item__content{
+      width: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      .g-item__content--characters{
+        line-height: 42px;
+        font-size: 28px;
+      }
+    }
+  }
+  .item-A{
+    .g-item__title{
+      background-image: url("./img/recruitskill-title(1).png");
+    }
+    .g-item__content{
+      height:526px;
+      background-image: url("./img/recruitskill-bg(1).png");
+      .g-item__content--characters{
+        width:328px;
+        height:308px;
+        padding-top:46px;
+        margin-left:32%;
+      }
+    }
+  }
+  .item-B{
+    .g-item__title{
+      background-image: url("./img/recruitskill-title(2).png");
+    }
+    .g-item__content{
+      height:628px;
+      background-image: url("./img/recruitskill-bg(2).png");
+      .g-item__content--characters{
+        width:298px;
+        height:210px;
+        padding-top:40px;
+        margin-left:72px;
+      }
+    }
+  }
+  .item-C{
+    .g-item__title{
+      background-image: url("./img/recruitskill-title(3).png");
+    }
+    .g-item__content{
+      height:508px;
+      background-image: url("./img/recruitskill-bg(3).png");
+      .g-item__content--characters{
+        line-height: 38px;
+        width:298px;
+        height:219px;
+        padding-top:30px;
+        margin-left:219px;
+      }
+    }
+  }
+  .item-D{
+    .g-item__title{
+      background-image: url("./img/recruitskill-title(4).png");
+    }
+    .g-item__content{
+      height:529px;
+      background-image: url("./img/recruitskill-bg(4).png");
+      .g-item__content--characters{
+        line-height: 38px;
+        width:298px;
+        height:219px;
+        padding-top:38px;
+        margin-left:377px;
+      }
+    }
+  }
+  .item-E{
+    .g-item__title{
+      background-image: url("./img/recruitskill-title(5).png");
+    }
+    .g-item__content{
+      height:562px;
+      background-image: url("./img/recruitskill-bg(5).png");
+      .g-item__content--characters{
+        line-height: 38px;
+        width:355px;
+        height:218px;
+        padding-top:52px;
+        margin-left:73px;
+      }
+    }
+  }
+  .item-F{
+    .g-item__title{
+      background-image: url("./img/recruitskill-title(6).png");
+    }
+    .g-item__content{
+      height:430px;
+      background-image: url("./img/recruitskill-bg(6).png");
+      .g-item__content--characters{
+        line-height: 38px;
+        width:274px;
+        height:104px;
+        padding-top:62px;
+        margin-left:264px;
+      }
+    }
+  }
+  .item-G{
+    .g-item__title{
+      background-image: url("./img/recruitskill-title(7).png");
+    }
+    .g-item__content{
+      height:454px;
+      background-image: url("./img/recruitskill-bg(7).png");
+      .g-item__content--characters{
+        line-height: 38px;
+        width:254px;
+        height:136px;
+        padding-top:44px;
+        margin-left:288px;
+      }
+    }
+  }
+  .item-H{
+    .g-item__title{
+      background-image: url("./img/recruitskill-title(8).png");
+    }
+    .g-item__content{
+      height:510px;
+      background-image: url("./img/recruitskill-bg(8).png");
+      .g-item__content--characters{
+        line-height: 38px;
+        width:327px;
+        height:214px;
+        padding-top:50px;
+        margin-left:46px;
+      }
+    }
+  }
+  .item-I{
+    .g-item__title{
+      background-image: url("./img/recruitskill-title(9).png");
+    }
+    .g-item__content{
+      height:472px;
+      background-image: url("./img/recruitskill-bg(9).png");
+      .g-item__content--characters{
+        line-height: 38px;
+        width:298px;
+        height:136px;
+        padding-top:52px;
+        margin-left:388px;
+      }
+    }
+  }
+  .item-J{
+    .g-item__title{
+      background-image: url("./img/recruitskill-title(10).png");
+    }
+    .g-item__content{
+      position: relative;
+      height:378px;
+      background-image: url("./img/recruitskill-bg(10).png");
+      .g-item__content--characters{
+        line-height: 38px;
+        width:388px;
+        height:255px;
+        padding-top:52px;
+        margin-left:60px;
+      }
+      .g-item__content--img01,.g-item__content--img02{
+        position: absolute;
+        width:156px;
+        height:156px;
+      }
+      .g-item__content--img01{
+        top:27px;
+        left:495px;
+      }
+      .g-item__content--img02{
+        top:196px;
+        left:569px;
+      }
+    }
+  }
+}
+.g-footer{
+  @include clearfix;
+  width:750px;
+  height:214px;
+  padding:34px 42px 0px 42px;
+  border-top: 12px solid #a9dc84;
+  background-color:#ccc;
+  color:#fff;
+  .g-footer__QR{
+    @include clearfix;
+    float:left;
+    width:314px;
+    height:114px;
+    .g-qr__item{
+      float:left;
+      margin-left:20px;
+      img{
+        width:93px;
+        height:93px;
+      }
+      h5{
+        font-size:16.67px;/*px*/
+      }
+    }
+
+  }
+  .g-footer__info{
+    float:left;
+    width:322px;
+    height:114px;
+    ul{
+      li{
+        font-size: 19.44px;/*px*/
+        line-height: 30px;/*px*/
+      }
+    }
+  }
+  .g-footer__copyright{
+    float:left;
+    width:100%;
+    height:54px;
+    padding-top:34px;
+    font-size: 13.89px;/*px*/
+    text-align: center;
+  }
+}
+.g-toolbar{
+  position: fixed;
+  bottom:155px;
+  right:18px;
+  width:70px;
+  height:160px;
+  ul{
+    width:100%;
+    .g-toolbar__top{
+      width:100%;
+      height:80px;
+      background: #eee;
+      opacity: .7;
+      .g-toolbar__icon--top{
+        display: block;
+        padding:8px 9px 0px 9px;
+        width:70px;
+        height:60px;
+        background-image: url("./img/go-top.png");
+        background-repeat: no-repeat;
+        background-size: 42px 42px;
+        background-position: center center;
+      }
+      h5{
+        font-size: 13px;/*px*/
+        color:#818181;
+        text-align: center;
+      }
+    }
+    .g-toolbar__msg{
+      width:100%;
+      height:80px;
+      background: #ff6600;
+      opacity: .7;
+      .g-toolbar__icon--bottom{
+        display: block;
+        padding:8px 9px 0px 9px;
+        width:70px;
+        height:60px;
+        background-image: url("./img/leavemsg.png");
+        background-repeat: no-repeat;
+        background-size: 42px 42px;
+        background-position: center center;
+      }
+      h5{
+        font-size: 13px;/*px*/
+        color:#fff;
+        text-align: center;
+      }
+    }
+  }
+}
+.g-more{
+  position: relative;
+  display: block;
+  width:750px;
+  height:304px;
+  padding:42px;
+  background-image: url("./img/more-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: #fff;
+  .g-icon__phonecall{
+    position: absolute;
+    top:160px;
+    left:470px;
+    width:65px;
+    height:75px;
+    background-image: url("./img/icon-phonecall.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+}
+.tada{
+  animation-iteration-count:infinite;
+}
