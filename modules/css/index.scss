@@ -107,7 +107,7 @@
 			height: 100%;
 			.swiper-slide {
 				a {
-					@include text-overflow
+					@include text-overflow;
 					position: relative;
 					display: block;
 					height:40px; 
@@ -357,4 +357,63 @@
 		}
 	}
 }
-
+/**活动页**/
+.g-activity{
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index:9999999;
+	display: block;
+	width:750px;
+	height:1334px;
+	background: url("./img/mask-bg.png");
+	.g-activity__colse{
+		position: absolute;
+		top:50%;
+		right:50%;
+		margin-right: -240px;
+		margin-top:-316px;
+		display:block;
+		width:67px;
+		height:67px;
+		z-index:99999999;
+	}
+	.g-activity__alert{
+		position: absolute;
+		top:50%;
+		left:50%;
+		display: block;
+		width:480px;
+		height:632px;
+		margin-left: -240px;
+		margin-top:-316px;
+		background-image: url("./img/activity_wap_alert.png");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}
+.g-activity__hd{
+	position: fixed;
+	top:680px;
+	left:100px;
+	z-index:9999999;
+	display:block;
+	width:140px;
+	height:140px;
+	background-image: url("./img/18577100f632de7_06.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transition: all 1s;
+}
+.g-activity__hd.actity{
+	width:180px;
+	height:180px;
+	top:222px;
+	left:10px;
+	transition: all 1s;
+}
+.animated.shake{
+	animation-duration: 2s;
+}

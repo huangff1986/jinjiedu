@@ -1,0 +1,11 @@
+@import "base/mixins";
+
+.g-page{
+  display: block;
+  width:750px;
+  height: 3843px;
+  background-image: url("./img/activity_detail.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

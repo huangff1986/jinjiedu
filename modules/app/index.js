@@ -9,7 +9,21 @@ require('swiper/swiper.css')
 
 fastclick.attach(document.body); 
 /************基础JS end *************/
-
+//双十一活动
+$("body").on("touchmove",function(event){
+    event.preventDefault;
+}, false);
+$(".g-activity").height(document.documentElement.clientHeight);
+$(".g-activity__colse").click(function(){
+    $("body").off("touchmove");
+    $(".g-activity").hide();
+    $(".g-activity__hd").addClass("actity");
+});
+	setTimeout(function(){
+        $("body").off("touchmove");
+		$(".g-activity").hide();
+		$(".g-activity__hd").addClass("actity");
+	},8000);
 // 代码部分
 var banner = new Swiper('.g-banner__swiper', {
 	loop: true,
