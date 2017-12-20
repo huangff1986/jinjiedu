@@ -1,0 +1,354 @@
+@import "base/mixins";
+::-webkit-input-placeholder { /* WebKit browsers */
+  color:    #ddd;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    #ddd;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    #ddd;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:    #ddd;
+}
+textarea{
+  color:#ddd;
+  padding: 10px;
+  font-size: 26px;
+  &.normal{
+    color:#333;
+  }
+}
+.g-form__input{
+  border:none;
+  font-size: 26px;
+}
+.g-form__select{
+  background: transparent;
+  border:none;
+  width:140px;
+  height:100%;
+  color: #dddddd;
+  font-size: 26px;
+  &.normal{
+    color:#333;
+  }
+  &#selectProv,&#selectCity{
+    width:190px;
+  }
+  &#campus,&#budget{
+    width:190px;
+  }
+}
+.g-form__file{
+  display: block;
+  width:165px;
+  height:110px;
+  float: right;
+  background: #f1f1f1;
+  margin-top: 20px;
+  position: relative;
+  i{
+    display: block;
+    width:100%;
+    height:100%;
+    background-size: 64px 64px;
+    background-position: 50px 10px ;
+    background-repeat: no-repeat;
+    background-image: url("./img/application_file_icon.png");
+    padding-top: 55px;
+    text-align: center;
+    font-style: normal;
+    font-size: 18px;
+    color: #888888;
+  }
+  input{
+    position: absolute;
+    top:0px;
+    left:0px;
+    display: block;
+    width:100%;
+    height:100%;
+    opacity: 0;
+  }
+}
+.g-form__radio{
+  display: inline-block!important;
+  width:120px!important;
+  height:64px!important;
+  background-size: 40px 40px;
+  background-position: 10px 10px ;
+  background-repeat: no-repeat;
+  background-image: url("./img/application_radio_uncheck.png");
+  padding-left: 70px;
+  &.checked{
+    background-image: url("./img/application_radio_check.png");
+  }
+}
+.g-page {
+  display: block;
+  width: 750px;
+  min-height: 3426px;
+  background-image: url("./img/application_form-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #58dd90;
+  padding-bottom: 70px;
+}
+
+.g-header {
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  .back {
+    float: left;
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin-top: 13px;
+    margin-left: 13px;
+    background: url('./img/application_back.png') no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+  h2 {
+    @include text-hide;
+  }
+}
+
+.g-agreement {
+  width: 664px;
+  height: 361px;
+  background-image: url("./img/application_part_04.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 280px;
+  padding: 50px;
+  table {
+    width: 100%;
+    height: 100%;
+    td {
+      vertical-align: top;
+    }
+    p {
+      font-size: 28px;
+      color: #333;
+      line-height: 45px;
+      text-align: justify;
+    }
+  }
+  .g-agreement__checkbox {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url('./img/application_uncheck.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-top: 8px;
+    margin-right: 15px;
+    &.checked {
+      background-image: url('./img/application_check.png');
+    }
+  }
+}
+
+.g-info {
+  width: 664px;
+  height: 1200px;
+  background-image: url("./img/application_part_01.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 30px;
+  ul {
+    width: 100%;
+    height: 100%;
+    padding: 0px 12px;
+    li {
+      width: 100%;
+      height: 64px;
+      line-height: 64px;
+      font-size: 20px;
+      padding:0 24px;
+      background: #fff;
+      border-bottom: 1px solid #ccc;
+      .reslut{
+        //background: #888888;
+        float:right;
+        width:180px;
+        height:100%;
+        line-height: 20px;
+        padding: 20px;
+        margin-right: 30px;
+      }
+      span{
+        color:#444;
+        font-size: 28px;
+      }
+      &:nth-child(1),&:nth-child(13) {
+        span{
+          font-size: 20px;
+          color: #888888!important;
+          background: #ddd;
+        }
+        background: #ddd;
+      }
+      &:nth-child(14),&:nth-child(15){
+        height:150px;
+      }
+      &:nth-child(12){
+        height:150px;
+        textarea{
+          width:100%;
+          height:70px;
+          resize: none;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.g-survey {
+  width: 664px;
+  height: 722px;
+  background-image: url("img/application_part_02(2).png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 30px;
+  ul{
+    width:100%;
+    height:560px;
+    padding: 40px;
+    li{
+      margin-bottom: 10px;
+      width:100%;
+      height:240px;
+      p{
+        font-size: 28px;
+        color: #444444;
+        width:100%;
+        height: 40px;
+        line-height: 40px;
+      }
+      textarea{
+        width:100%;
+        height:200px;
+        resize: none;
+        border-radius: 10px;
+        border:2px solid #888888;
+      }
+    }
+  }
+}
+
+.g-auxiliary {
+  width: 664px;
+  height: auto;
+  //background-image: url("img/application_part_03.png");
+  //background-size: contain;
+  //background-position: center center;
+  //background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 40px;
+  ul {
+    //box-shadow: 0 3px 5px #eee;
+    width: 100%;
+    height: 100%;
+    padding: 0px 12px;
+    li {
+      width: 100%;
+      height: 64px;
+      line-height: 64px;
+      font-size: 20px;
+      padding:0 24px;
+      background: #fff;
+      border-bottom: 1px solid #ccc;
+      position: relative;
+      span{
+        color:#444;
+        font-size: 28px;
+      }
+      &:nth-child(1),&:nth-child(6) {
+        span{
+          font-size: 20px;
+          color: #888888!important;
+          background: #ddd;
+        }
+        background: #ddd;
+      }
+      .g-auxiliary__add{
+        display: block;
+        width:100%;
+        height:100%;
+        line-height: 64px;
+        background-image: url("img/application_add_icon.png");
+        background-repeat: no-repeat;
+        background-position: 190px 0px;
+        background-size: 64px 64px;
+        padding-left: 260px;
+        color: #888888;
+      }
+      .colsed_btn{
+        display: none;
+        width:48px;
+        height:48px;
+        position: absolute;
+        right:0px;
+        top:8px;
+        background-image: url("img/application_del.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+.g-form__submit {
+  display: block;
+  width: 262px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 70px;
+  font-size: 26px;
+}
+
+.g-form__submit:hover {
+  box-shadow: 0 3px 5px #ddd;
+}
+#star{
+  display: inline-block;
+  height:64px;
+  i{
+    display: inline-block;
+    width:62px;
+    height:62px;
+    background-image: url("img/star-off.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 48px 48px;
+    &.on{
+      background-image: url("img/star-on.png");
+    }
+    &.off{
+      background-image: url("img/star-off.png");
+    }
+    &.half{
+      background-image: url("img/star-half.png");
+    }
+  }
+}

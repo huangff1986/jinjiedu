@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="address=no" name="format-detection"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="author" content="CGHY">
+    <script src="lib/flexible.js"></script><!--ignore-->
+    <title>晋级托管加盟申请表</title>
+    <link rel="stylesheet" href="modules/css/common.scss">
+    <link rel="stylesheet" href="modules/css/application_form.scss">
+
+</head>
+<body>
+<div class="g-page">
+    <div class="g-header">
+        <a href="javascript:void(0);" class="back"></a>
+        <h2>晋级教育</h2>
+    </div>
+    <form action="" method="post" class="g-form" enctype="multipart/form-data">
+        <!--协议-->
+        <div class="g-agreement">
+            <table>
+                <tr>
+                    <td>
+                        <a href="javascript:void(0)" class="g-agreement__checkbox"></a>
+                        <input type="hidden" value="0" class="g-agreement__checkValue" name=""/>
+                    </td>
+                    <td>
+                        <p>
+                            本人认真阅读了贵机构提供的全部资料，同时考察了本地学生托管市场，并经过本机构管理层集体商讨，决定引进中国学生托管开创品牌晋级托管。
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--基本信息-->
+        <div class="g-info">
+            <ul>
+                <li>
+                    <span>请填写身份信息</span>
+                </li>
+                <li>
+                    <span>投资人姓名：</span>
+                    <input  name="" id="" class="g-form__input" placeholder="请输入您的姓名" />
+                </li>
+                <li>
+                    <span>性别：</span>
+                    <a href="javascript:void(0);" class="g-form__radio checked base_radio" data="1">男</a>
+                    <a href="javascript:void(0);" class="g-form__radio base_radio" data="2">女</a>
+                    <input type="hidden" value="1" name="sex" id="sex"/>
+                </li>
+                <li>
+                    <span>手机：</span>
+                    <input  name="" id="" type="number" class="g-form__input" placeholder="请输入您的电话" />
+                </li>
+                <li>
+                    <span>省份：</span>
+                    <select class="g-form__select" id="selectProv" onchange="prov_onChange()">
+                        <option value="">请选择</option>
+                    </select>
+                    <span >城市：</span>
+                    <select class="g-form__select" id="selectCity" onchange="city_onChange()">
+                        <option value="">请选择</option>
+                    </select>
+                </li>
+                <li>
+                    <span>学历：</span>
+                    <select class="g-form__select">
+                        <option value="">请选择</option>
+                        <option value="1">小学</option>
+                        <option value="2">初中</option>
+                        <option value="3">中专</option>
+                        <option value="4">高中</option>
+                        <option value="5">大专</option>
+                        <option value="6">本科</option>
+                        <option value="7">硕士</option>
+                        <option value="8">博士</option>
+                        <option value="9">博士后</option>
+                    </select>
+                </li>
+                <li>
+                    <span>毕业学校：</span>
+                    <input  name="" id=""  class="g-form__input" placeholder="请输入您的毕业学校" />
+                </li>
+                <li>
+                    <span>专业：</span>
+                    <input  name="" id=""   class="g-form__input" placeholder="请输入您的专业" />
+                </li>
+                <li class="clearfix">
+                    <span style="display:block;float:left;">投资意向指数：</span>
+                    <div id="star" data-score="5" style="float:left;">
+                        <i data-score="1"></i>
+                        <i data-score="2"></i>
+                        <i data-score="3"></i>
+                        <i data-score="4"></i>
+                        <i data-score="5"></i>
+                    </div>
+                    <input type="hidden" name="" value="5"/>
+                </li>
+                <li>
+                    <span>校区面积：</span>
+                    <select class="g-form__select" id="campus">
+                        <option value="">请选择</option>
+                        <option value="1">100-300m²</option>
+                        <option value="2">300-500m²</option>
+                        <option value="3">500-800m²</option>
+                        <option value="4">800m²以上</option>
+                    </select>
+                </li>
+                <li>
+                    <span>投资预算：</span>
+                    <select class="g-form__select" id="budget">
+                        <option value="">请选择</option>
+                        <option value="1">20万以内</option>
+                        <option value="2">20万-50万</option>
+                        <option value="3">50万以上</option>
+                    </select>
+                </li>
+                <li>
+                    <span>投资人创业（工作）经历：</span><br/>
+                    <textarea  name="" id=""   class="g-form__input" value="" >请输入文字</textarea>
+                </li>
+                <li>
+                    <span>请上传投资人身份证照片</span>
+                </li>
+                <li class="clearfix">
+                    <span>身份证正面照：</span>
+                    <a href="javascript:void(0)" class="g-form__file">
+                        <i class="g-form__file_icon">添加图片</i>
+                        <input type="file"/>
+                    </a>
+                    <div class="reslut">
+                        <img/>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <span>身份证反面照：</span>
+                    <a href="javascript:void(0)" class="g-form__file">
+                        <i class="g-form__file_icon">添加图片</i>
+                        <input type="file"/>
+                    </a>
+                    <div class="reslut">
+                        <img/>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--调研-->
+        <div class="g-survey">
+            <ul>
+                <li>
+                    <p>本地托管市场调研情况：</p>
+                    <textarea>请输入文字，最少10个字</textarea>
+                </li>
+                <li>
+                    <p>本机构引进晋级托管的优势：</p>
+                    <textarea>请输入文字，最少10个字</textarea>
+                </li>
+            </ul>
+        </div>
+        <!--其他-->
+        <div class="g-auxiliary" >
+            <ul>
+                <li>
+                    <span>请填写第十四届托管教育高峰论坛参会人员信息（不得多于3人）</span>
+                    <i class="colsed_btn"></i>
+                </li>
+                <li>
+                    <span>参会人姓名：</span>
+                    <input  name="" id="" class="g-form__input" placeholder="请输入您的姓名" />
+                </li>
+                <li>
+                    <span>性别：</span>
+                    <a href="javascript:void(0);" class="g-form__radio checked other_radio" data="1">男</a>
+                    <a href="javascript:void(0);" class="g-form__radio other_radio" data="2">女</a>
+                    <input type="hidden" value="1" name="sex1" />
+                </li>
+                <li>
+                    <span>与投资人关系：</span>
+                    <input  name="" id=""  class="g-form__input" placeholder="请输入您与投资人的关系" />
+                </li>
+                <li>
+                    <span>联系方式：</span>
+                    <input  name="" id="" type="number" class="g-form__input" placeholder="请输入您的电话" />
+                </li>
+                <li>
+                    <a href="javascript:void(0);"  class="g-auxiliary__add">添加新的参会人</a>
+                </li>
+        </div>
+        <!--提交按钮-->
+        <input type="submit" value="点击提交" class="g-form__submit" disabled="disabled"/>
+    </form>
+</div>
+<script src="lib/mod.js"></script>
+<script>
+    require('modules/app/application_form');
+</script>
+</body>
+</html>
